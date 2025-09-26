@@ -20,11 +20,18 @@ body {
     background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
     color: var(--link-color);
     text-decoration: none;
+}
+
+main {
+    flex: 1;
 }
 
 /* Navigation Bar */
@@ -246,6 +253,14 @@ nav .right .sidebar-toggle:hover{
     line-height: 1.5;
     margin: 0;
     text-align: left;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--link-color);
+    margin-top: auto;
 }
 
 /* Responsive Design */
