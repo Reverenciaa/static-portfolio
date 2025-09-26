@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="/">Christopherson Labios</a>
+        </div>
+
+        <div class="right">
+            <a href="http://github.com" target = "_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="http://linkedin.com" target = "_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:christophersonclabios27@gmail.com">
+                <i class="fa-solid fa-at"></i>
+                <span>Email</span>
+            </a>
+
+            <button class="sidebar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="sidebar-close">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-links">
+            <a href="pages/education.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Education</span>
+            </a>
+            <a href="pages/experience.html">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Experience</span>
+            </a>
+            <a href="pages/skills.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="pages/certification.html">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Certification and Training</span>
+            </a>
+            <a href="pages/advocacy.html">
+                <i class="fa-solid fa-heart"></i>
+                <span>Advocacy</span>
+            </a>
+            <a href="pages/portfolio.html">
+                <i class="fa-solid fa-folder"></i>
+                <span>Portfolio</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Overlay for sidebar -->
+    <div class="sidebar-overlay"></div>
+        
+    <main>
+        <!-- Hero Section -->
+        <section class = "hero-section">
+            <div class="text">
+                <h2>Hi, I'm Tope!</h2>
+                <p class = "hero-text"> 
+                    I am a Computer Science student at Far Eastern University - Institute of Technology,
+                    currently in my fourth year. I am currently taking software engineering as my major.
+                    I have a passion for coding and I am always eager to learn new technologies and improve my
+                    skills as a programmer.
+                </p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#projects">
+                        <i class="fa-solid fa-list"></i>                        
+                        <span>Hobbies</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Contact</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="img/me.jpg" alt="Christopherson Labios">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id = "projects" class = "projects-section">
+            <h2>Projects</h2>
+            <p class = "text">
+                These are some projects I have made, some personally and some with a group, during my coding experience
+            </p>
+            
+            <div class="cells">
+                <div class = "cell">                        
+                    <img src ="img/sentishop-logo.png" alt="SentiShop">
+                    <span>SentiShop</span>
+                </div>
+
+                <div class = "cell">
+                    <img src ="img/geometry-dash.png" alt="Geometry Dash Imitation">
+                    <span href="https://github.com/The-Thesis-Gods/SentiShop/tree/main">Geometry Dash Imitation</span>
+                </div>
+
+                <div class = "cell">
+                    <img src ="img/Byte-Script.png" alt="Byte-Script Logo">
+                    <span>Mini Interpreter</span>
+                </div>
+
+            </div>
+
+            <button class = "more-projects" href="projects.html">
+                <i class="fa-solid fa-plus"></i>
+                <span>More Projects</span>
+            </button>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id = "contact" class = "contact-section">
+            <h2>Contact</h2>
+            
+            <div class = "group">
+                <div class = "text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat est expedita minus a pariatur tempora, nostrum laborum, qui enim deserunt, ullam recusandae iusto non nihil neque magnam accusantium reprehenderit possimus autem. Quas, voluptate possimus repellendus dicta aut non. Eos iusto laudantium optio dolore numquam, ex voluptatibus molestias dolor. Beatae, repellendus!
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type ="text" id="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type ="text" id="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script src="scripts/script.js">
+</script>
+</html>
